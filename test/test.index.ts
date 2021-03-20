@@ -16,31 +16,8 @@ import {describe, it} from 'mocha';
 import * as gal from '../src';
 
 describe('index', () => {
-  it('should publicly export GoogleAuth', () => {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const cjs = require('../src/');
-    assert.strictEqual(cjs.GoogleAuth, gal.GoogleAuth);
-  });
-
-  it('should publicly export DefaultTransporter', () => {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const cjs = require('../src');
-    assert.strictEqual(cjs.DefaultTransporter, gal.DefaultTransporter);
-  });
-
-  it('should export all the things', () => {
+  it('should export JUST OAuth2Client', () => {
     assert(gal.CodeChallengeMethod);
-    assert(gal.Compute);
-    assert(gal.DefaultTransporter);
-    assert(gal.IAMAuth);
-    assert(gal.JWT);
-    assert(gal.JWTAccess);
     assert(gal.OAuth2Client);
-    assert(gal.UserRefreshClient);
-    assert(gal.GoogleAuth);
-    assert(gal.ExternalAccountClient);
-    assert(gal.IdentityPoolClient);
-    assert(gal.AwsClient);
-    assert(gal.BaseExternalAccountClient);
   });
 });

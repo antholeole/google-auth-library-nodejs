@@ -1,31 +1,23 @@
 {
-  "name": "google-auth-library",
+  "name": "google-oauth-2-client",
   "version": "7.0.2",
-  "author": "Google Inc.",
+  "author": "Anthony Oleinik",
   "description": "Google APIs Authentication Client Library for Node.js",
   "engines": {
     "node": ">=10"
   },
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
-  "repository": "googleapis/google-auth-library-nodejs.git",
+  "repository": "git@github.com:antholeole/google-auth-library-nodejs.git",
   "keywords": [
     "google",
-    "api",
-    "google apis",
-    "client",
-    "client library"
+    "oauth2client"
   ],
   "dependencies": {
-    "arrify": "^2.0.0",
     "base64-js": "^1.3.0",
     "ecdsa-sig-formatter": "^1.0.11",
     "fast-text-encoding": "^1.0.0",
-    "gaxios": "^4.0.0",
-    "gcp-metadata": "^4.2.0",
-    "gtoken": "^5.0.4",
-    "jws": "^4.0.0",
-    "lru-cache": "^6.0.0"
+    "gaxios": "^4.0.0"
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.7",
